@@ -55,19 +55,23 @@ nav a:hover {
         padding: 10px 0px;
     }
     
-    .footer .grupo1 {
-        width: 90%;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 30px;
-        padding: 35px 0px;
+    .grupo1 {
+        display: grid;
+        grid-template: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
     }
 
-    .card {
-        max-width: 70%;
-        display: flex;
+    .container {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
     }
 
+
+    
 }
 
 .navbar { 
