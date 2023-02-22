@@ -55,12 +55,17 @@ nav a:hover {
         padding: 10px 0px;
     }
     
-    .grupo1 {
-        display: grid;
-        grid-template: column;
+    .footer {
+        flex-flow: wrap;
+    }
+
+    .grupo1 .box {
+        width: 80%;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         height: auto;
+        flex-flow: wrap;
     }
 
     .container {
@@ -70,7 +75,13 @@ nav a:hover {
         height: auto;
     }
 
+    .sidebar {
+        flex-flow: wrap;
+    }
 
+    .box {
+        width: 80%;
+    }
     
 }
 
@@ -197,8 +208,10 @@ max-width: 100%
 .sidebar p {
     text-align: left;
     justify-content: center;
-    margin-left: 10px;
+    
 }
+
+
 
 .sidebar img {
     float: right;
