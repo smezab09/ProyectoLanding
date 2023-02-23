@@ -47,43 +47,6 @@ nav a:hover {
     color: black;
 }
 
-@media screen and (max-width:800px) {
-    header {
-        flex-direction: column;
-    }
-    nav {
-        padding: 10px 0px;
-    }
-    
-    .footer {
-        flex-flow: wrap;
-    }
-
-    .grupo1 .box {
-        width: 80%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: auto;
-        flex-flow: wrap;
-    }
-
-    .container {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: auto;
-    }
-
-    .sidebar {
-        flex-flow: wrap;
-    }
-
-    .box {
-        width: 80%;
-    }
-    
-}
 
 .navbar { 
     grid-area: "navbar";
@@ -197,6 +160,12 @@ max-width: 100%
 
 }
 
+.description {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
 .sidebar h2 {
     text-align: left;
     justify-content: center;
@@ -214,15 +183,18 @@ max-width: 100%
 
 
 .sidebar img {
-    float: right;
     border-style: solid;
     border-radius: 15px;
     border-color: transparent;
     min-height: 70px;
-    margin-right: 25px;
+    margin-left: auto;
     margin-bottom: 20px;
 }
 
+.box-img {
+    width: 50%;
+    text-align: right;
+}
 
 .footer{
     grid-area: "footer";
@@ -292,4 +264,55 @@ color: white;
     "main"
     "sidebar"
     "footer";
+}
+
+@media screen and (max-width:800px) {
+    header {
+        flex-direction: column;
+    }
+    nav {
+        padding: 10px 0px;
+    }
+    
+    .footer .grupo1 {
+        display: flex;
+        flex-flow: wrap;
+        flex-direction: column;
+    }
+
+    .grupo1 .box {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        flex-flow: wrap;
+    }
+
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    .sidebar {
+        flex-flow: wrap;
+        flex-direction: column;
+    }
+
+    .description {
+        width: 100%;
+    }
+
+    .box-img {
+        width: 100%;
+        text-align: center;
+    }
+
+    .box {
+        width: 80%;
+    }
+
+    
 }
